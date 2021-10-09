@@ -1,6 +1,19 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Images/Logo.png" type="Texture" id=1]
+[ext_resource path="res://Images/Background.png" type="Texture" id=2]
+[ext_resource path="res://Images/Tuki.png" type="Texture" id=3]
 
 [node name="game" type="Node2D"]
 
-[node name="foo" type="Line2D" parent="."]
-points = PoolVector2Array( 136, 91, 499, 228 )
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 324.062, 243.027 )
+texture = ExtResource( 2 )
+
+[node name="Tuki" type="Sprite" parent="."]
+position = Vector2( 242.17, 382.357 )
+texture = ExtResource( 3 )
+
+[node name="Logo" type="Sprite" parent="Tuki"]
+position = Vector2( 128.061, -241.896 )
+texture = ExtResource( 1 )
